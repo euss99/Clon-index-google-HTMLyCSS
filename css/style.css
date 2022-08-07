@@ -1,3 +1,4 @@
+/* Seccion del header */
 body {
     margin: 0;
     padding: 0;
@@ -43,4 +44,81 @@ nav .nav-right-section .menu-icon {
 nav .nav-right-section img {
     border-radius: 50%;
     margin-left: 10px;
+}
+
+/* Seccion del main */
+main {
+    margin-top: 125px;
+    text-align: center;
+}
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img {
+    width: 300px;
+}
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 2px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input {
+    width: 450px;
+    height: 35px;
+    border: none;
+    outline: none; /* quita el borde azul que aparece con el input */
+}
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    padding-right: 13px;
+}
+main .main-input .micro-icon {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div {
+    display: inline-block;
+}
+main .main-buttons button {
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 0;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+main .main-buttons button:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    color: #202124;
 }
