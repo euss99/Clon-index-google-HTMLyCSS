@@ -1,3 +1,8 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Seccion del header */
 body {
     margin: 0;
@@ -40,6 +45,10 @@ nav .nav-right-section .menu-icon {
     background-size: contain; /* Con esta propiedad lo que se hará es que el icono estará del tamaño de su contenedor */
     width: 25px;
     height: 25px;
+}
+nav .nav-right-section .menu-icon:hover {
+    background-color: rgba(60,64,67,.08);
+    border-radius: 50%;
 }
 nav .nav-right-section img {
     border-radius: 50%;
@@ -121,4 +130,48 @@ main .main-buttons button:hover {
     border: 1px solid #dadce0;
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
     color: #202124;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    background-color: #f2f2f2;
+}
+footer .footer-up {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e4e4e4;
+    padding-left: 20px;
+}
+footer .footer-down {
+    height: 46px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-top: 1px solid #e4e4e4;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer-left {
+    justify-self: left;
+}
+footer .footer-right {
+    justify-self: right;
+}
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
+footer div span {
+    color: #5f6368;
 }
