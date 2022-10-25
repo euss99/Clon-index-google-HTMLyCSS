@@ -1,4 +1,6 @@
 html {
+    width: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,6 +47,8 @@ nav .nav-right-section .menu-icon {
     background-size: contain; /* Con esta propiedad lo que se hará es que el icono estará del tamaño de su contenedor */
     width: 25px;
     height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 nav .nav-right-section .menu-icon:hover {
@@ -60,7 +64,7 @@ nav .nav-right-section img:hover {
 }
 /* Seccion del main */
 main {
-    margin-top: 125px;
+    /* margin-top: 125px; */
     text-align: center;
 }
 main .main-logo {
@@ -148,7 +152,7 @@ footer .footer-up {
     display: flex;
     align-items: center;
     border-top: 1px solid #e4e4e4;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 footer .footer-down {
     height: 46px;
@@ -177,4 +181,10 @@ footer ul li a {
 }
 footer div span {
     color: #5f6368;
+}
+
+@media (max-width: 620px) {
+    footer .footer-down {
+        grid-template-columns: repeat(auto-fit, 1fr);
+    }
 }
